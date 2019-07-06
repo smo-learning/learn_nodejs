@@ -2,8 +2,16 @@ const http = require("http");
 
 http.createServer((req, res) => {
   const url = req.url;
-  console.log(url);
+
   res.writeHead(200, { 'Content-Type': 'text/html' });
-  res.write('Hello World!');
+
+  if (url === "/") {
+    res.write('Hello World!');
+  }
+  if (url === "/users") {
+    let users = [1, 2, 3].map(i => "<li>User " + i + "</li>");
+    res.write("<ul>"+users+"</ul>");
+  }
+
   res.end();
 }).listen(3000);
