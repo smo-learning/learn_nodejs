@@ -1,0 +1,17 @@
+{
+  "name": "assignment-two",
+  "version": "1.0.0",
+  "description": "install Express.js\r # Task 2\r Funnel 2 middleware functions that log something\r # Task 3\r \"/\" and \"/users\"",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
